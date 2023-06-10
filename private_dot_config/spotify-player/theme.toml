@@ -1,0 +1,170 @@
+[[themes]]
+name = "blue_matrix"
+[themes.palette]
+background = "#101116"
+foreground = "#00a2ff"
+black = "#101116"
+red = "#ff5680"
+green = "#00ff9c"
+yellow = "#fffc58"
+blue = "#00b0ff"
+magenta = "#d57bff"
+cyan = "#76c1ff"
+white = "#c7c7c7"
+bright_black = "#686868"
+bright_red = "#ff6e67"
+bright_green = "#5ffa68"
+bright_yellow = "#fffc67"
+bright_blue = "#6871ff"
+bright_magenta = "#d682ec"
+bright_cyan = "#60fdff"
+bright_white = "#ffffff"
+[themes.component_style]
+block_title = { fg = "Magenta"  }
+border = {}
+playback_track = { fg = "Cyan", modifiers = ["Bold"] }
+playback_artists = { fg = "Cyan", modifiers = ["Bold"] }
+playback_album = { fg = "Yellow" }
+playback_metadata = { fg = "BrightBlack" }
+playback_progress_bar = { bg = "BrightBlack", fg = "Green" }
+current_playing = { fg = "Green", modifiers = ["Bold"] }
+page_desc = { fg = "Cyan", modifiers = ["Bold"] }
+table_header = { fg = "Blue" }
+selection = { modifiers = ["Bold", "Reversed"] }
+    
+[[themes]]
+name = "dark_pastel"
+[themes.palette]
+background = "#000000"
+foreground = "#ffffff"
+black = "#000000"
+red = "#ff5555"
+green = "#55ff55"
+yellow = "#ffff55"
+blue = "#5555ff"
+magenta = "#ff55ff"
+cyan = "#55ffff"
+white = "#bbbbbb"
+bright_black = "#555555"
+bright_red = "#ff5555"
+bright_green = "#55ff55"
+bright_yellow = "#ffff55"
+bright_blue = "#5555ff"
+bright_magenta = "#ff55ff"
+bright_cyan = "#55ffff"
+bright_white = "#ffffff"
+[themes.component_style]
+block_title = { fg = "Magenta"  }
+border = {}
+playback_track = { fg = "Cyan", modifiers = ["Bold"] }
+playback_artists = { fg = "Cyan", modifiers = ["Bold"] }
+playback_album = { fg = "Yellow" }
+playback_metadata = { fg = "BrightBlack" }
+playback_progress_bar = { bg = "BrightBlack", fg = "Green" }
+current_playing = { fg = "Green", modifiers = ["Bold"] }
+page_desc = { fg = "Cyan", modifiers = ["Bold"] }
+table_header = { fg = "Blue" }
+selection = { modifiers = ["Bold", "Reversed"] }
+    
+[[themes]]
+name = "desert"
+[themes.palette]
+background = "#333333"
+foreground = "#ffffff"
+black = "#4d4d4d"
+red = "#ff2b2b"
+green = "#98fb98"
+yellow = "#f0e68c"
+blue = "#cd853f"
+magenta = "#ffdead"
+cyan = "#ffa0a0"
+white = "#f5deb3"
+bright_black = "#555555"
+bright_red = "#ff5555"
+bright_green = "#55ff55"
+bright_yellow = "#ffff55"
+bright_blue = "#87ceff"
+bright_magenta = "#ff55ff"
+bright_cyan = "#ffd700"
+bright_white = "#ffffff"
+[themes.component_style]
+block_title = { fg = "Magenta"  }
+border = {}
+playback_track = { fg = "Cyan", modifiers = ["Bold"] }
+playback_artists = { fg = "Cyan", modifiers = ["Bold"] }
+playback_album = { fg = "Yellow" }
+playback_metadata = { fg = "BrightBlack" }
+playback_progress_bar = { bg = "BrightBlack", fg = "Green" }
+current_playing = { fg = "Green", modifiers = ["Bold"] }
+page_desc = { fg = "Cyan", modifiers = ["Bold"] }
+table_header = { fg = "Blue" }
+selection = { modifiers = ["Bold", "Reversed"] }
+    
+[[themes]]
+name = "firefoxdev"
+[themes.palette]
+background = "#0e1011"
+foreground = "#7c8fa4"
+black = "#002831"
+red = "#e63853"
+green = "#5eb83c"
+yellow = "#a57706"
+blue = "#359ddf"
+magenta = "#d75cff"
+cyan = "#4b73a2"
+white = "#dcdcdc"
+bright_black = "#001e27"
+bright_red = "#e1003f"
+bright_green = "#1d9000"
+bright_yellow = "#cd9409"
+bright_blue = "#006fc0"
+bright_magenta = "#a200da"
+bright_cyan = "#005794"
+bright_white = "#e2e2e2"
+[themes.component_style]
+block_title = { fg = "Magenta"  }
+border = {}
+playback_track = { fg = "Cyan", modifiers = ["Bold"] }
+playback_artists = { fg = "Cyan", modifiers = ["Bold"] }
+playback_album = { fg = "Yellow" }
+playback_metadata = { fg = "BrightBlack" }
+playback_progress_bar = { bg = "BrightBlack", fg = "Green" }
+current_playing = { fg = "Green", modifiers = ["Bold"] }
+page_desc = { fg = "Cyan", modifiers = ["Bold"] }
+table_header = { fg = "Blue" }
+selection = { modifiers = ["Bold", "Reversed"] }
+    
+[[themes]]
+name = "operator"
+[themes.palette]
+background = "#191919"
+foreground = "#c3cac2"
+black = "#5a5a5a"
+red = "#ca372d"
+green = "#4d7b3a"
+yellow = "#d4d697"
+blue = "#4387cf"
+magenta = "#b86cb4"
+cyan = "#72d5c6"
+white = "#ced4cd"
+bright_black = "#9a9b99"
+bright_red = "#c37d62"
+bright_green = "#83d0a2"
+bright_yellow = "#fdfdc5"
+bright_blue = "#89d3f6"
+bright_magenta = "#ff2c7a"
+bright_cyan = "#82eada"
+bright_white = "#fdfdf6"
+[themes.component_style]
+block_title = { fg = "Magenta"  }
+border = {}
+playback_track = { fg = "Cyan", modifiers = ["Bold"] }
+playback_artists = { fg = "Cyan", modifiers = ["Bold"] }
+playback_album = { fg = "Yellow" }
+playback_metadata = { fg = "BrightBlack" }
+playback_progress_bar = { bg = "BrightBlack", fg = "Green" }
+current_playing = { fg = "Green", modifiers = ["Bold"] }
+page_desc = { fg = "Cyan", modifiers = ["Bold"] }
+table_header = { fg = "Blue" }
+selection = { modifiers = ["Bold", "Reversed"] }
+    

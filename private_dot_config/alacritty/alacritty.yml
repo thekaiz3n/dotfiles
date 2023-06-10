@@ -1,0 +1,79 @@
+# https://github.com/alacritty/alacritty/
+colors:
+  primary:
+    background: "#101010"
+    foreground: "#141414"
+
+  # Flat remix : https://github.com/Gogh-Co/Gogh/blob/master/themes/flat-remix.sh
+  # For more themes: https://github.com/eendroroy/alacritty-theme
+  normal:
+    black: "#4d4d4d"
+    red: "#ff2b2b"
+    green: "#98fb98"
+    yellow: "#f0e68c"
+    blue: "#cd853f"
+    magenta: "#ffdead"
+    cyan: "#ffa0a0"
+    white: "#ffffff"
+
+  bright:
+    black: "#545454"
+    red: "#ff5555"
+    green: "#55ff55"
+    yellow: "#ffff55"
+    blue: "#87ceff"
+    magenta: "#ff55ff"
+    cyan: "#ffd700"
+    white: "#f5deb3"
+
+cursor:
+  style:
+    blinking: Never
+
+font:
+  normal:
+    family: Comic Code Ligatures
+    style: Regular
+
+  bold:
+    family: Comic Code Ligatures
+    style: SemiBold
+
+  italic:
+    family: Comic Code Ligatures
+    style: Italic
+
+  size: 10.0
+
+  ligatures: true
+
+  offset:
+    x: 0
+    y: 0
+  glyph_offset:
+    x: 0
+    y: 0
+
+window:
+  opacity: 1
+  padding:
+    x: 5
+    y: 5
+
+  history: 10000
+
+  dynamic_title: true
+
+  semantic_escape_chars: ',│`|:"'' ()[]{}<>'
+  save_to_clipboard: true
+  live_config_reload: true
+
+key_bindings:
+  - { key: V, mods: Alt, action: Paste }
+  - { key: C, mods: Alt, action: Copy }
+  - { key: Key0, mods: Alt, action: ResetFontSize }
+  - { key: Equals, mods: Alt, action: IncreaseFontSize }
+  - { key: Minus, mods: Alt, action: DecreaseFontSize }
+
+env:
+  TERM: xterm-256color

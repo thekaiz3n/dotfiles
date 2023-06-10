@@ -1,0 +1,92 @@
+#zmodload zsh/zprof
+# Enable colors and change prompt:
+autoload -U colors && colors
+
+setopt autocd
+stty stop undef
+setopt interactive_comments
+
+# Basic auto/tab complete:
+autoload -U compinit
+
+# Load and initialize the completion system with a cache of 24h
+_comp_files=(${ZDOTDIR:-$HOME}/.zcompdump(Nm-24))
+if (( $#_comp_files )); then
+  compinit -i -C
+else
+  compinit -i
+fi
+unset _comp_files
+setopt HIST_SAVE_NO_DUPS
+
+zstyle ':completion:*' menu select
+zmodload zsh/complist
+_comp_options+=(globdots)
+
+# vi mode
+bindkey -v
+export KEYTIMEOUT=1
+
+# Use vim keys in tab complete menu:
+zmodload zsh/complist
+bindkey -M menuselect 'h' vi-backward-char
+bindkey -M menuselect 'k' vi-up-line-or-history
+bindkey -M menuselect 'l' vi-forward-char
+bindkey -M menuselect 'j' vi-down-line-or-history
+bindkey -v '^?' backward-delete-char
+
+# Edit line in vim with ctrl-e:
+autoload -Uz edit-command-line
+zle -N edit-command-line
+bindkey -M vicmd v edit-command-line
+
+# Add Vi text-objects for brackets and quotes
+autoload -Uz select-bracketed select-quoted
+zle -N select-quoted
+zle -N select-bracketed
+for km in viopp visual; do
+  bindkey -M $km -- '-' vi-up-line-or-history
+  for c in {a,i}${(s..)^:-\'\"\`\|,./:;=+@}; do
+    bindkey -M $km $c select-quoted
+  done
+  for c in {a,i}${(s..)^:-'()[]{}<>bB'}; do
+    bindkey -M $km $c select-bracketed
+  done
+done
+
+# Emulation of vim-surround
+autoload -Uz surround
+zle -N delete-surround surround
+zle -N add-surround surround
+zle -N change-surround surround
+bindkey -M vicmd cs change-surround
+bindkey -M vicmd ds delete-surround
+bindkey -M vicmd ys add-surround
+bindkey -M visual S add-surround
+
+# History search
+bindkey "^[[1;5A" history-substring-search-up
+bindkey "^[[1;5B" history-substring-search-down
+bindkey '^R' history-incremental-search-backward
+
+# Load functions
+source "$ZDOTDIR/zsh-functions"
+
+# Source defer first
+check-defer "romkatv/zsh-defer"
+
+# Change cursor mode
+add-file "/plugins/cursor-mode"
+
+# Alias
+add-file "/aliases/aliases"
+add-file "/aliases/aliases.local"
+
+# Load Prompt
+source "$ZDOTDIR/prompts/prompt-setup"
+
+# Plugins
+plugin "zsh-users/zsh-autosuggestions"
+plugin "zsh-users/zsh-syntax-highlighting"
+plugin "zsh-users/zsh-history-substring-search"
+# + install zsh-completions-git from repository(AUR)

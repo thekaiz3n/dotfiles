@@ -1,0 +1,120 @@
+{
+    "height": 18,
+    "spacing": 1,
+
+    "modules-left": ["wlr/workspaces", "hyprland/window"],
+    "modules-center": [],
+    "modules-right": ["mpris", "network#vpn", "pulseaudio", "memory", "cpu","custom/cpu-temp", "custom/gpu-temp", "clock"],
+
+    "wlr/workspaces": {
+	"format": "{name}",
+	"on-click": "activate",
+    },
+    "hyprland/window": {
+        "format": "{}",
+	"max-length": 50,
+	"separate-outputs": true
+    },
+    "clock": {
+        "format-alt": "<span color='#b2555b'></span>  {:%a %b %d}",
+        "format": "<span color='#b2555b'></span> {:%I:%M }",
+	"tooltip-format": "<tt>{calendar}</tt>",
+        "calendar": {
+                    "mode"          : "month",
+                    "mode-mon-col"  : 3,
+                    "weeks-pos"     : "right",
+                    "on-scroll"     : 1,
+                    "on-click-right": "mode",
+                    "format": {
+                              "months":     "<span color='#ffead3'><b>{}</b></span>",
+                              "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+                              "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+                              "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+                              "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+                              }
+                    },
+        "actions":  {
+                    "on-click-right": "mode",
+                    "on-click-forward": "tz_up",
+                    "on-click-backward": "tz_down",
+                    "on-scroll-up": "shift_up",
+                    "on-scroll-down": "shift_down"
+                    }
+    },
+    "network": {
+        "format-wifi": "直[essid] {signalStrength}%",
+        "format-ethernet": " {ipaddr}",
+        "format-disconnected": "睊",
+        "format-alt": " {ifname}: {ipaddr}/{cidr}"
+    },
+    "network#ethernet": {
+        "interface": "enp*",
+        "format-ethernet": "",
+        "format-wifi": "",
+        "format-linked": "",
+        "format-disconnected": "",
+	"format-alt": " {ifname}: {ipaddr}/{cidr}"
+   },
+    "network#wifi": {
+        "interface": "wlp*",
+        "format-ethernet": "",
+        "format-wifi": " {essid} ({signalStrength}%)",
+        "format-linked": "",
+        "format-disconnected": "",
+	"format-alt": " {ifname}: {ipaddr}/{cidr}"
+    },
+    "network#vpn": {
+        "interface": "wg*",
+        "format": "",
+        "format-alt": " {ipaddr}",
+	"format-disconnected": "",
+    },
+    "cpu": {
+    	"interval": 10,
+    	"format": "{usage}%",
+	"format-alt": "CPU usage: {usage}",
+	"states": {
+  	    "critical": 90,
+    	},
+    },
+    "memory": {
+   	"interval": 10,
+    	"format": "{used}GB",
+	"format-alt": "Mem. use: {used}GB",
+	"states": {
+   	    "critical":90,
+  	},
+    },
+    "pulseaudio":{
+    	"format": "{volume}%",
+    },
+    "mpris": {
+	"format": "{player_icon}  {status_icon}{artist} - {title} ",
+	"format-paused": "{player_icon}  {status_icon}{artist} - {title}",
+	"max-length": 40,
+	"player-icons": {
+		"spotify_player": "󰓇",
+		"firefox": "󰈹",
+		"chromium": "",
+		"mpv": "",
+	},
+	"status-icons": {
+        	"playing": " ",
+        	"paused": " ",
+	},
+	"interval": 30,
+    },
+
+    "custom/cpu-temp": {
+    	"exec": "sensors | awk '/CPUTIN/ {printf $2 }' | sed '1s/^.//' | head -c-5",
+	"format": "{}° ",
+	"format-alt": "CPU temp: {}° ",
+	"interval": 30,
+    },
+    "custom/gpu-temp": {
+    	"exec": "sensors | awk '/edge/ {print $2}' | sed '1s/^.//' | head -c-6",
+	"format": "{}°",
+	"format-alt": "GPU temp: {}°",
+	"interval": 30,
+    },
+}
