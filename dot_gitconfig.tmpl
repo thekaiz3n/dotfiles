@@ -1,0 +1,27 @@
+[user]
+	name = {{ .user.git.email }}
+	email = {{ .user.git.name }}
+
+[alias]
+  a = add
+  ai = add -i
+  ap = add -p
+  br = branch
+  c = commit -m
+  cl = clone
+  clean = !git reset --hard && git clean -df
+  co = checkout
+  cob = checkout -b
+  d = diff
+  done = !git push --follow-tags origin HEAD
+  fix = commit --amend -m
+  ft = fetch
+  i = init --initial-branch=main
+  l = log
+  la = !"git config -l | grep alias | cut -c 7-"
+  pl = pull
+  ps = push
+  psf = push --force-with-lease
+  rm = branch -D
+  s = status
+  undo = reset HEAD~1 --mixed
