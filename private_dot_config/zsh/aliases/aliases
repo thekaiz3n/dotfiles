@@ -37,16 +37,6 @@ alias mv="mv -vi"
 alias rm="rm -vi"
 alias del="shred -uv"
 
-# folder
-alias md1='mount /dev/sda1 ~/mnt/drive1'
-alias md2='mount /dev/sdb1 ~/mnt/drive2'
-alias musb='mount /dev/sdc1 ~/mnt/usb'
-alias mand='simple-mtpfs ~/mnt/android'
-alias umd1='umount ~/mnt/drive1'
-alias umd2='umount ~/mnt/drive2'
-alias umusb='umount ~/mnt/usb'
-alias umand='fusermount -u ~/mnt/android'
-
 #  system adm
 alias gpu='nvtop'
 alias cpu='btop'

@@ -43,5 +43,3 @@ export QT_QPA_PLATFORMTHEME="qt5ct"
 export _JAVA_AWT_WM_NONREPARENTING=1
 export XCURSOR_SIZE=12
 
-#Add to path
-export PATH="$PATH:$HOME/.local/bin:$CARGO_HOME/bin"

@@ -69,6 +69,10 @@ bindkey "^[[1;5A" history-substring-search-up
 bindkey "^[[1;5B" history-substring-search-down
 bindkey '^R' history-incremental-search-backward
 
+# Add path
+path+=("$GOPATH/bin")
+path+=("$CARGO_HOME/bin")
+
 # Load functions
 source "$ZDOTDIR/zsh-functions"
 
