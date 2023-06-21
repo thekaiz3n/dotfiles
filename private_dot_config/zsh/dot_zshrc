@@ -69,6 +69,11 @@ bindkey "^[[1;5A" history-substring-search-up
 bindkey "^[[1;5B" history-substring-search-down
 bindkey '^R' history-incremental-search-backward
 
+# Atuin
+export ATUIN_NOBIND="true"
+eval "$(atuin init zsh)"
+bindkey '^r' _atuin_search_widget
+
 # Add path
 path+=("$GOPATH/bin")
 path+=("$CARGO_HOME/bin")
