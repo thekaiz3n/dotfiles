@@ -9,6 +9,8 @@
   fi
 } &!
 
+{{ if eq .chezmoi.hostname "hypr" }}
 if [ "$(tty)" = "/dev/tty1" ];then
   exec Hyprland
 fi
+{{end}}
