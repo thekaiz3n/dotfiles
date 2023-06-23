@@ -1,1 +1,15 @@
-kde/kglobalshortcutsrc
+README.md
+
+kde/
+
+{{- if ne .osid "linux-kde" }}
+.config/kglobalshortcutsrc
+{{ end }}
+
+{{- if ne .osid "linux-hypr" }}
+.config/hypr/
+.config/waybar/
+.config/rofi/
+.config/wpaperd/
+.config/spotify-player/
+{{- end }}

@@ -9,8 +9,8 @@
   fi
 } &!
 
-{{ if eq .chezmoi.hostname "hypr" }}
+{{ if eq .osid "linux-hypr" }}
 if [ "$(tty)" = "/dev/tty1" ];then
   exec Hyprland
 fi
-{{end}}
+{{ end }}
