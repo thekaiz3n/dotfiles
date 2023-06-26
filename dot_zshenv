@@ -24,7 +24,7 @@ export SAVEHIST=10000
 export EDITOR="nvim"
 export VISUAL="nvim"
 export TERMINAL="kitty"
-export BROWSER="firefox"
+export BROWSER="chromium"
 
 # Others
 export XINITRC="${XDG_CONFIG_HOME:-$HOME/.config}/x11/xinitrc"
