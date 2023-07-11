@@ -3,11 +3,16 @@ update_info=kwin.upd:replace-scalein-with-scale,kwin.upd:port-minimizeanimation-
 
 [Desktops]
 Id_1=054f68b2-373d-4259-bc72-71bcf38ea670
+Id_10=4b1b1a5d-6af8-4ba5-856b-3256cca25779
 Id_2=5fc41aaa-e4ff-4161-be38-b091fdfd8ae0
 Id_3=b0046737-ec7a-44ae-bb28-ac88d4e008bd
 Id_4=9b506cbd-5d79-4ca7-b5b7-d35c971f9f42
 Id_5=b6b7a1f6-7bf0-44ff-aaaa-0aac349d46fc
-Number=5
+Id_6=87821eec-9800-48d3-8717-3da2c8fe77e4
+Id_7=9e9771da-956d-45c6-b5fb-ae0db3763581
+Id_8=a820de90-e0a8-48fb-bb2a-42b1978093c4
+Id_9=b96ef59f-8a46-4b22-acad-8c0f0a9f32c9
+Number=10
 Rows=1
 
 [NightColor]

@@ -45,7 +45,7 @@ toggle_spread_layout=none,,Toggle Spread Layout
 toggle_stair_layout=none,,Toggle Stair Layout
 toggle_three_column_layout=none,,Toggle Three Column Layout
 toggle_tile_layout=none,Meta+T,Toggle Tile Layout
-toggle_window_floating=none,Meta+F,Toggle Active Window Floating
+toggle_window_floating=Meta+V,Meta+F,Toggle Active Window Floating
 
 [chromium.desktop]
 _k_friendly_name=Chromium
@@ -124,7 +124,7 @@ Switch Window Left=Meta+Alt+Left\tMeta+Left,Meta+Alt+Left,Switch to Window to th
 Switch Window Right=Meta+Alt+Right\tMeta+Right,Meta+Alt+Right,Switch to Window to the Right
 Switch Window Up=Meta+Up\tMeta+Alt+Up,Meta+Alt+Up,Switch to Window Above
 Switch to Desktop 1=Ctrl+F1\tMeta+1,Ctrl+F1,Switch to Desktop 1
-Switch to Desktop 10=none,,Switch to Desktop 10
+Switch to Desktop 10=Meta+0,,Switch to Desktop 10
 Switch to Desktop 11=none,,Switch to Desktop 11
 Switch to Desktop 12=none,,Switch to Desktop 12
 Switch to Desktop 13=none,,Switch to Desktop 13
@@ -253,11 +253,11 @@ view_zoom_out=Meta+-,Meta+-,Zoom Out
 
 [mediacontrol]
 _k_friendly_name=Media Controller
-mediavolumedown=none,,Media volume down
-mediavolumeup=none,,Media volume up
+mediavolumedown=none,none,Media volume down
+mediavolumeup=none,none,Media volume up
 nextmedia=Meta+N\tMedia Next,Media Next,Media playback next
 pausemedia=Media Pause,Media Pause,Pause media playback
-playmedia=none,,Play media playback
+playmedia=none,none,Play media playback
 playpausemedia=Meta+M\tMedia Play,Media Play,Play/Pause media playback
 previousmedia=Media Previous\tMeta+B,Media Previous,Media playback previous
 stopmedia=Media Stop,Media Stop,Stop media playback
