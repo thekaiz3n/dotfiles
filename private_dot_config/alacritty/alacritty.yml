@@ -55,7 +55,7 @@ font:
     y: 0
 
 window:
-  opacity: 1
+  opacity: 0.95
   padding:
     x: 5
     y: 5

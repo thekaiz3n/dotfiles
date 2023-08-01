@@ -25,11 +25,11 @@ kwin4_effect_fadedesktopEnabled=true
 slideEnabled=false
 
 [Script-bismuth]
-screenGapBottom=8
-screenGapLeft=8
-screenGapRight=8
-screenGapTop=8
-tileLayoutGap=5
+screenGapBottom=3
+screenGapLeft=2
+screenGapRight=2
+screenGapTop=2
+tileLayoutGap=2
 untileByDragging=false
 
 [Tiling]
