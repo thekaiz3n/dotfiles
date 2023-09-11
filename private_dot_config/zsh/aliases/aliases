@@ -10,10 +10,10 @@ alias update='pacman -Syu'
 alias '?'='tldr'
 alias '??'='man'
 
-# exa
-alias ls='exa'
-alias lsa='exa -la '
-alias lsat='exa -la --tree '
+# eza
+alias ls='eza'
+alias lsa='eza -la '
+alias lsat='eza -la --tree '
 
 # nvim
 alias nv='nvim'
