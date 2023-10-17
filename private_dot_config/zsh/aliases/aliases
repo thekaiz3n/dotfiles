@@ -1,6 +1,9 @@
 #!/usr/sh
 
 # system
+export EDITOR=nvim
+export BROWSER=brave
+
 alias stdown='systemctl poweroff -i'
 alias rboot='systemctl reboot -i'
 alias lock='swaylock $XDG_CONFIG_HOME/.config/swaylock/config'
