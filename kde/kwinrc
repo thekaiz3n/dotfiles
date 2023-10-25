@@ -42,13 +42,14 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Windows]
+RollOverDesktops=true
 SeparateScreenFocus=true
 
 [Xwayland]
 Scale=1
 
 [org.kde.kdecoration2]
-BorderSize=NoSides
+BorderSize=Tiny
 BorderSizeAuto=false
-library=org.kde.breeze
-theme=Breeze
+library=org.kde.bismuth.decoration
+theme=Bismuth

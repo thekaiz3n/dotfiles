@@ -6,7 +6,7 @@ _k_friendly_name=Activity Manager
 switch-to-activity-f48633ca-1558-4b61-bc2f-b441dfbdd841=none,none,Switch to activity "Padrão"
 
 [KDE Keyboard Layout Switcher]
-Switch to Next Keyboard Layout=Meta+Alt+K,Meta+Alt+K,Mudar para o próximo layout de teclado
+Switch to Next Keyboard Layout=Meta+Alt+K,Meta+Alt+K,Switch to Next Keyboard Layout
 _k_friendly_name=Keyboard Layout Switcher
 
 [bismuth]
@@ -47,7 +47,7 @@ toggle_three_column_layout=none,,Toggle Three Column Layout
 toggle_tile_layout=none,Meta+T,Toggle Tile Layout
 toggle_window_floating=Meta+V,Meta+F,Toggle Active Window Floating
 
-[brave-browser.desktop]
+[com.brave.Browser.desktop]
 _k_friendly_name=Brave
 _launch=Meta+W,none,Brave
 new-private-window=none,none,New Incognito Window
@@ -306,6 +306,7 @@ activate task manager entry 6=none,Meta+6,Activate Task Manager Entry 6
 activate task manager entry 7=none,Meta+7,Activate Task Manager Entry 7
 activate task manager entry 8=none,Meta+8,Activate Task Manager Entry 8
 activate task manager entry 9=none,Meta+9,Activate Task Manager Entry 9
+activate widget 3=,none,Activate Application Launcher Widget
 activate widget 33=none,none,Activate Application Launcher Widget
 activate widget 4=Alt+F1,none,Activate Application Launcher Widget
 clear-history=none,,Clear Clipboard History
@@ -314,7 +315,7 @@ cycle-panels=Meta+Alt+P,Meta+Alt+P,Move keyboard focus between panels
 cycleNextAction=none,,Next History Item
 cyclePrevAction=none,,Previous History Item
 edit_clipboard=none,,Edit Contents…
-manage activities=none,Meta+Q,Show Activity Switcher
+manage activities=Alt+S,Meta+Q,Show Activity Switcher
 next activity=Meta+Tab,Meta+Tab,Walk through activities
 previous activity=Meta+Shift+Tab,Meta+Shift+Tab,Walk through activities (Reverse)
 repeat_action=Meta+Ctrl+R,Meta+Ctrl+R,Manually Invoke Action on Current Clipboard
