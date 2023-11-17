@@ -25,6 +25,7 @@ Mode=Times
 [Plugins]
 bismuthEnabled=true
 blurEnabled=true
+contrastEnabled=false
 forceblurEnabled=true
 slideEnabled=false
 
