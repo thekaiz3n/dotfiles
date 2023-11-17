@@ -26,7 +26,7 @@ Mode=Times
 bismuthEnabled=true
 blurEnabled=true
 contrastEnabled=false
-forceblurEnabled=true
+forceblurEnabled=false
 slideEnabled=false
 
 [Script-bismuth]

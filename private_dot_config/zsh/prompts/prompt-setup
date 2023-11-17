@@ -120,7 +120,7 @@ prompt_setup() {
 
     prompt_git_branch
     RPROMPT='$(prompt_git_info)$(git_prompt_status)'
-    PROMPT='%B%{$fg[grey]%}[%{$fg[white]%}%n%{$fg[red]%}@%{$fg[white]%}%m%{$fg[white]%} %{$fg[white]%}%(4~|%-2~/…/%1~|%4~)%{$fg[grey]%}] '
+    PROMPT='%B%{$fg[grey]%}[%{$fg[grey]%}%n%{$fg[red]%}@%{$fg[grey]%}%m%{$fg[white]%} %{$fg[white]%}%(4~|%-2~/…/%1~|%4~)%{$fg[grey]%}] '
     #PROMPT=$'%F{white}%~ %B%F{blue}>%f%b '
 }
 
