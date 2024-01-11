@@ -37,7 +37,7 @@ push_window_to_master=none,Meta+Return,Push Active Window to Master Area
 rotate=none,Meta+R,Rotate
 rotate_part=none,Meta+Shift+R,Rotate Part
 rotate_reverse=none,,Rotate (Reverse)
-toggle_float_layout=none,Meta+Shift+F,Toggle Floating Layout
+toggle_float_layout=Meta+X,Meta+Shift+F,Toggle Floating Layout
 toggle_monocle_layout=none,Meta+M,Toggle Monocle Layout
 toggle_quarter_layout=none,,Toggle Quarter Layout
 toggle_spiral_layout=none,,Toggle Spiral Layout
@@ -248,7 +248,7 @@ Window to Screen 6=none,,Window to Screen 6
 Window to Screen 7=none,,Window to Screen 7
 _k_friendly_name=KWin
 view_actual_size=none,Meta+0,Zoom to Actual Size
-view_zoom_in=Meta++\tMeta+=,Meta++,Zoom In
+view_zoom_in=Meta++\tMeta+=,Meta++\tMeta+=,Zoom In
 view_zoom_out=Meta+-,Meta+-,Zoom Out
 
 [mediacontrol]
@@ -261,6 +261,13 @@ playmedia=none,,Play media playback
 playpausemedia=Meta+M\tMedia Play,Media Play,Play/Pause media playback
 previousmedia=Media Previous\tMeta+B,Media Previous,Media playback previous
 stopmedia=Media Stop,Media Stop,Stop media playback
+
+[org.flameshot.Flameshot.desktop]
+Capture=Meta+C,none,Take screenshot
+Configure=none,none,Configure
+Launcher=none,none,Open launcher
+_k_friendly_name=Flameshot
+_launch=none,none,Flameshot
 
 [org.kde.dolphin.desktop]
 _k_friendly_name=Dolphin
