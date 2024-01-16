@@ -1,6 +1,5 @@
 {{- $name      := promptStringOnce . "user.git.name" "Name used in GitHub?" -}}
 {{- $email     := promptStringOnce . "user.git.email" "Email used in GitHub?" -}}
-{{- $file     := promptStringOnce . "user.git.file" "File used in GitHub?" -}}
 {{- $secretKey := promptStringOnce . "openai.secretKey" "Your OpenAI Key (optional)" -}}
 
 {{- $osid := .chezmoi.os -}}
@@ -12,7 +11,6 @@
 [data.user.git]
 name = {{ $name | quote }}
 email = {{ $email | quote }}
-file = {{ $file | quote }}
 
 [data.openai]
 secretKey = {{ $secretKey | quote }}

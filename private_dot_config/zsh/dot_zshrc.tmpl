@@ -100,7 +100,3 @@ plugin "zsh-users/zsh-syntax-highlighting"
 plugin "zsh-users/zsh-history-substring-search"
 # + install zsh-completions-git from repository(AUR)
 
-{{ if false }}
-eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/{{ .user.git.file }}
-{{ end }}
