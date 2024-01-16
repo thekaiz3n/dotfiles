@@ -102,5 +102,5 @@ plugin "zsh-users/zsh-history-substring-search"
 
 {{ if false }}
 eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/{{ .user.git.name }}
+ssh-add ~/.ssh/{{ .user.git.file }}
 {{ end }}
