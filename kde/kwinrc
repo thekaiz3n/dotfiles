@@ -1,17 +1,20 @@
 [$Version]
 update_info=kwin.upd:replace-scalein-with-scale,kwin.upd:port-minimizeanimation-effect-to-js,kwin.upd:port-scale-effect-to-js,kwin.upd:port-dimscreen-effect-to-js,kwin.upd:auto-bordersize,kwin.upd:animation-speed,kwin.upd:desktop-grid-click-behavior,kwin.upd:no-swap-encourage,kwin.upd:make-translucency-effect-disabled-by-default,kwin.upd:remove-flip-switch-effect,kwin.upd:remove-cover-switch-effect,kwin.upd:remove-cubeslide-effect,kwin.upd:remove-xrender-backend,kwin.upd:enable-scale-effect-by-default,kwin.upd:overview-group-plugin-id,kwin.upd:animation-speed-cleanup,kwin.upd:replace-cascaded-zerocornered,bismuth_new_logger.upd:bismuth-new-logger
 
+[Compositing]
+LatencyPolicy=Medium
+
 [Desktops]
 Id_1=054f68b2-373d-4259-bc72-71bcf38ea670
-Id_10=4b1b1a5d-6af8-4ba5-856b-3256cca25779
+Id_10=68c074b9-af7a-4767-897b-a8d204d672ef
 Id_2=5fc41aaa-e4ff-4161-be38-b091fdfd8ae0
 Id_3=b0046737-ec7a-44ae-bb28-ac88d4e008bd
 Id_4=9b506cbd-5d79-4ca7-b5b7-d35c971f9f42
 Id_5=b6b7a1f6-7bf0-44ff-aaaa-0aac349d46fc
-Id_6=87821eec-9800-48d3-8717-3da2c8fe77e4
-Id_7=9e9771da-956d-45c6-b5fb-ae0db3763581
-Id_8=a820de90-e0a8-48fb-bb2a-42b1978093c4
-Id_9=b96ef59f-8a46-4b22-acad-8c0f0a9f32c9
+Id_6=5ed1f3cd-06eb-4d89-87a4-60e50df6d7f8
+Id_7=89bc7821-6978-4b96-a5d0-9e4ce2327ca8
+Id_8=a76aeac0-7628-42d6-9f5a-30b889c0c9f9
+Id_9=4d11654e-f0c5-4396-bdb0-6525367c7806
 Number=10
 Rows=1
 
@@ -60,5 +63,4 @@ Scale=1
 [org.kde.kdecoration2]
 BorderSize=Tiny
 BorderSizeAuto=false
-library=org.kde.kwin.aurorae
 theme=__aurorae__svg__Materia-Manjaro-Dark-Solid
