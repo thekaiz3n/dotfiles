@@ -32,7 +32,7 @@ alias egrep='egrep --color=auto'
 alias diff='diff --color=auto'
 
 #yt-dlp
-alias yt="yt-dlp -f 'bv[height=1080][ext=mp4]+ba'"
+alias yt="yt-dlp -f '[ext=mp4]+bv+ba'"
 
 # files
 alias cp="cp -vi"
