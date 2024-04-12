@@ -1,7 +1,6 @@
 #zmodload zsh/zprof
 # Enable colors and change prompt:
 autoload -U colors && colors
-
 setopt autocd
 stty stop undef
 setopt interactive_comments
@@ -44,15 +43,6 @@ bindkey -M vicmd v edit-command-line
 autoload -Uz select-bracketed select-quoted
 zle -N select-quoted
 zle -N select-bracketed
-for km in viopp visual; do
-  bindkey -M $km -- '-' vi-up-line-or-history
-  for c in {a,i}${(s..)^:-\'\"\`\|,./:;=+@}; do
-    bindkey -M $km $c select-quoted
-  done
-  for c in {a,i}${(s..)^:-'()[]{}<>bB'}; do
-    bindkey -M $km $c select-bracketed
-  done
-done
 
 # Emulation of vim-surround
 autoload -Uz surround
@@ -87,16 +77,15 @@ check-defer "romkatv/zsh-defer"
 # Change cursor mode
 add-file "/plugins/cursor-mode"
 
+# Load Prompt
+source "$ZDOTDIR/prompts/prompt-setup"
+
 # Alias
 add-file "/aliases/aliases"
 add-file "/aliases/aliases.local"
-
-# Load Prompt
-source "$ZDOTDIR/prompts/prompt-setup"
 
 # Plugins
 plugin "zsh-users/zsh-autosuggestions"
 plugin "zsh-users/zsh-syntax-highlighting"
 plugin "zsh-users/zsh-history-substring-search"
 # + install zsh-completions-git from repository(AUR)
-

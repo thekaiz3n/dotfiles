@@ -30,6 +30,7 @@ bismuthEnabled=true
 blurEnabled=true
 contrastEnabled=false
 forceblurEnabled=false
+poloniumEnabled=false
 slideEnabled=false
 
 [Script-bismuth]
@@ -44,11 +45,18 @@ untileByDragging=false
 blurContent=true
 patterns=kitty\nyakuake\nurxvt\n\n
 
+[Script-polonium]
+Borders=2
+InsertionPoint=1
+
 [Tiling]
 padding=4
 
 [Tiling][00706690-05fb-5de9-bf2a-bd90a1741b60]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][ea921c05-d5b3-5afc-a3dc-450f7642ef99]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.5},{"width":0.5}]}
 
 [Tiling][f84afef5-3671-5476-afbf-bb88298d90a3]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}

@@ -55,7 +55,7 @@ git_prompt_status() {
     STATUS="$ZSH_THEME_GIT_PROMPT_DELETED$STATUS"
   fi
 
-	  if $(command git rev-parse --verify refs/stash >/dev/null 2>&1); then
+  if $(command git rev-parse --verify refs/stash >/dev/null 2>&1); then
     STATUS="$ZSH_THEME_GIT_PROMPT_STASHED$STATUS"
   fi
 
@@ -103,7 +103,6 @@ prompt_setup() {
 
     #autoload -Uz add-zsh-hook
     #add-zsh-hook precmd prompt_purity_precmd
-
     ZSH_THEME_GIT_PROMPT_PREFIX=" %F{white}%f:"
     ZSH_THEME_GIT_PROMPT_DIRTY=""
     ZSH_THEME_GIT_PROMPT_CLEAN=""
