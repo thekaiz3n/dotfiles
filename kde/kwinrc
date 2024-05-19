@@ -30,7 +30,7 @@ bismuthEnabled=true
 blurEnabled=true
 contrastEnabled=false
 forceblurEnabled=false
-poloniumEnabled=false
+poloniumEnabled=true
 slideEnabled=false
 
 [Script-bismuth]
@@ -48,6 +48,7 @@ patterns=kitty\nyakuake\nurxvt\n\n
 [Script-polonium]
 Borders=2
 InsertionPoint=1
+MaximizeSingle=true
 
 [Tiling]
 padding=4
@@ -56,7 +57,7 @@ padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][ea921c05-d5b3-5afc-a3dc-450f7642ef99]
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.5},{"width":0.5}]}
+tiles={"layoutDirection":"horizontal","tiles":[]}
 
 [Tiling][f84afef5-3671-5476-afbf-bb88298d90a3]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
@@ -71,4 +72,4 @@ Scale=1
 [org.kde.kdecoration2]
 BorderSize=Tiny
 BorderSizeAuto=false
-theme=__aurorae__svg__Materia-Manjaro-Dark-Solid
+theme=Breeze
