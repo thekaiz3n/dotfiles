@@ -30,7 +30,7 @@ bismuthEnabled=true
 blurEnabled=true
 contrastEnabled=false
 forceblurEnabled=false
-poloniumEnabled=true
+poloniumEnabled=false
 slideEnabled=false
 
 [Script-bismuth]
