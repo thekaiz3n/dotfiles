@@ -7,11 +7,13 @@ function plugin() {
     PLUGIN_NAME=$(echo $1 | cut -d "/" -f 2)
     if [ -d "$ZDOTDIR/plugins/$PLUGIN_NAME" ]; then
         # For plugins
+        add-file "plugins/$PLUGIN_NAME/$PLUGIN_NAME.prompt.zsh" || \
         add-file "plugins/$PLUGIN_NAME/$PLUGIN_NAME.plugin.zsh" || \
         add-file "plugins/$PLUGIN_NAME/$PLUGIN_NAME.zsh"
     else
         git clone "https://github.com/$1.git" "$ZDOTDIR/plugins/$PLUGIN_NAME"  && \
-	add-file "plugins/$PLUGIN_NAME/$PLUGIN_NAME.plugin.zsh" || \
+        add-file "plugins/$PLUGIN_NAME/$PLUGIN_NAME.prompt.zsh" || \
+        add-file "plugins/$PLUGIN_NAME/$PLUGIN_NAME.plugin.zsh" || \
         add-file "plugins/$PLUGIN_NAME/$PLUGIN_NAME.zsh"
 
     fi

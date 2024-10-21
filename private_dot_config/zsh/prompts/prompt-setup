@@ -118,9 +118,10 @@ prompt_setup() {
     ZSH_THEME_GIT_PROMPT_AHEAD="%B%F{green}%f%b "
 
     prompt_git_branch
-    RPROMPT='$(prompt_git_info)$(git_prompt_status)'
+    #RPROMPT='@@ $(prompt_git_info)$(git_prompt_status)'
     PROMPT='%B%{$fg[red]%}[%{$fg[white]%}%n%{$fg[red]%}@%{$fg[white]%}%m%{$fg[white]%} %{$fg[white]%}%(4~|%-2~/…/%1~|%4~)%{$fg[red]%}] '
-    #PROMPT=$'%F{white}%~ %B%F{blue}>%f%b '
+    RPROMPT='$GITSTATUS_PROMPT'
+ #PROMPT=$'%F{white}%~ %B%F{blue}>%f%b '
 }
 
 prompt_setup

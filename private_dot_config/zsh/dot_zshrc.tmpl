@@ -77,9 +77,6 @@ check-defer "romkatv/zsh-defer"
 # Change cursor mode
 add-file "/plugins/cursor-mode"
 
-# Load Prompt
-source "$ZDOTDIR/prompts/prompt-setup"
-
 # Alias
 add-file "/aliases/aliases"
 add-file "/aliases/aliases.local"
@@ -88,4 +85,11 @@ add-file "/aliases/aliases.local"
 plugin "zsh-users/zsh-autosuggestions"
 plugin "zsh-users/zsh-syntax-highlighting"
 plugin "zsh-users/zsh-history-substring-search"
+plugin "romkatv/gitstatus"
+
 # + install zsh-completions-git from repository(AUR)
+
+# Load Prompt
+#source $ZDOTDIR/plugins/gitstatus/gitstatus.prompt.zsh
+PROMPT="%B%{$fg[red]%}[%{$fg[white]%}%n%{$fg[red]%}@%{$fg[white]%}%m%{$fg[white]%} %{$fg[white]%}%(4~|%-2~/…/%1~|%4~)%{$fg[red]%}]"
+RPROMPT="$GITSTATUS_PROMPT"
