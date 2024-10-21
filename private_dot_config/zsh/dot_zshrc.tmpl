@@ -22,6 +22,8 @@ zstyle ':completion:*' menu select
 zmodload zsh/complist
 _comp_options+=(globdots)
 
+PROMPT="%B%{$fg[red]%}[%{$fg[white]%}%n%{$fg[red]%}@%{$fg[white]%}%m%{$fg[white]%} %{$fg[white]%}%(4~|%-2~/…/%1~|%4~)%{$fg[red]%}]"
+
 # vi mode
 bindkey -v
 export KEYTIMEOUT=1
@@ -85,11 +87,7 @@ add-file "/aliases/aliases.local"
 plugin "zsh-users/zsh-autosuggestions"
 plugin "zsh-users/zsh-syntax-highlighting"
 plugin "zsh-users/zsh-history-substring-search"
-plugin "romkatv/gitstatus"
 
 # + install zsh-completions-git from repository(AUR)
 
-# Load Prompt
-#source $ZDOTDIR/plugins/gitstatus/gitstatus.prompt.zsh
-PROMPT="%B%{$fg[red]%}[%{$fg[white]%}%n%{$fg[red]%}@%{$fg[white]%}%m%{$fg[white]%} %{$fg[white]%}%(4~|%-2~/…/%1~|%4~)%{$fg[red]%}]"
-RPROMPT="$GITSTATUS_PROMPT"
+
