@@ -111,8 +111,8 @@ History Items[$e]=file:$HOME/mnt/drive1/knowledge/Librarys/bookfusion,file:$HOME
 [General]
 BrowserApplication=com.google.Chrome.desktop
 ColorSchemeHash=f3d5a16757bc1c64d00111c20e75e5e5bd8b8812
-TerminalApplication=ghostty
-TerminalService=com.mitchellh.ghostty.desktop
+TerminalApplication=kitty
+TerminalService=kitty.desktop
 
 [KDE]
 LookAndFeelPackage=org.kde.breezedark.desktop
