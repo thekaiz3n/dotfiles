@@ -3,7 +3,6 @@ README.md
 kde/
 
 {{- if ne .osid "linux-kde" }}
-.config/kglobalshortcutsrc
 {{ end }}
 
 {{- if ne .osid "linux-hypr" }}
