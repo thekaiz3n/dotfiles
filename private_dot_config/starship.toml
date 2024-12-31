@@ -1,0 +1,20 @@
+
+format = '[\[](bold red)$username[@](bold red)$hostname[\]](bold red) $directory'
+
+right_format = '$git_branch'
+
+[username]
+show_always = true
+format = '$user'
+
+[hostname]
+ssh_only = false
+format = '$hostname'
+disabled = false
+
+[directory]
+truncation_length = 3
+truncation_symbol = '…/'
+
+[git_branch]
+format = '[$symbol$branch(:$remote_branch)]($style)'
