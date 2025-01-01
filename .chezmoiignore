@@ -2,7 +2,8 @@ README.md
 
 kde/
 
-.config/nvim/*.json
+#nvim
+**/nvim/lazy-lock.json
 
 {{- if ne .osid "linux-kde" }}
 {{ end }}
