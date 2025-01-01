@@ -110,8 +110,7 @@ History Items[$e]=file:$HOME/mnt/drive1/knowledge/Librarys/bookfusion,file:$HOME
 
 [General]
 BrowserApplication=com.google.Chrome.desktop
-ColorScheme=MateriaManjaroDarkSolid
-ColorSchemeHash=f3d5a16757bc1c64d00111c20e75e5e5bd8b8812
+ColorSchemeHash=8226d22b8dfe76a5c80def50e8a0f6c6344c5b3d
 TerminalApplication=ghostty
 TerminalService=com.mitchellh.ghostty.desktop
 
