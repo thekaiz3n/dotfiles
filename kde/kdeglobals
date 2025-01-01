@@ -48,6 +48,34 @@ ForegroundNormal=222,222,222
 ForegroundPositive=47,235,35
 ForegroundVisited=22,222,205
 
+[Colors:Header]
+BackgroundAlternate[$d]
+BackgroundNormal[$d]
+DecorationFocus[$d]
+DecorationHover[$d]
+ForegroundActive[$d]
+ForegroundInactive[$d]
+ForegroundLink[$d]
+ForegroundNegative[$d]
+ForegroundNeutral[$d]
+ForegroundNormal[$d]
+ForegroundPositive[$d]
+ForegroundVisited[$d]
+
+[Colors:Header][Inactive]
+BackgroundAlternate[$d]
+BackgroundNormal[$d]
+DecorationFocus[$d]
+DecorationHover[$d]
+ForegroundActive[$d]
+ForegroundInactive[$d]
+ForegroundLink[$d]
+ForegroundNegative[$d]
+ForegroundNeutral[$d]
+ForegroundNormal[$d]
+ForegroundPositive[$d]
+ForegroundVisited[$d]
+
 [Colors:Selection]
 BackgroundAlternate=21,209,193
 BackgroundNormal=0,145,133
@@ -110,7 +138,8 @@ History Items[$e]=file:$HOME/mnt/drive1/knowledge/Librarys/bookfusion,file:$HOME
 
 [General]
 BrowserApplication=com.google.Chrome.desktop
-ColorSchemeHash=8226d22b8dfe76a5c80def50e8a0f6c6344c5b3d
+ColorScheme=MateriaManjaroDarkSolid
+ColorSchemeHash=f13a5f93a8d2186748a87eaf56ec9fcef24073d5
 TerminalApplication=ghostty
 TerminalService=com.mitchellh.ghostty.desktop
 

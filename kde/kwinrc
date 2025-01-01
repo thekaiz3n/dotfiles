@@ -76,4 +76,3 @@ Scale=1
 [org.kde.kdecoration2]
 BorderSize=Tiny
 BorderSizeAuto=false
-theme=Breeze

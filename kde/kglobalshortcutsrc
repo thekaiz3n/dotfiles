@@ -272,6 +272,9 @@ switch to next activity=none,,Switch to Next Activity
 switch to previous activity=none,,Switch to Previous Activity
 toggle do not disturb=none,,Toggle do not disturb
 
+[services][com.brave.Browser.desktop]
+_launch=Meta+W
+
 [services][com.mitchellh.ghostty.desktop]
 _launch=Meta+Return
 
@@ -286,6 +289,3 @@ ShowOSD=Display
 
 [services][org.kde.plasma.emojier.desktop]
 _launch=Meta+Ctrl+Alt+Shift+Space
-
-[services][org.mozilla.firefox.desktop]
-_launch=Meta+W
