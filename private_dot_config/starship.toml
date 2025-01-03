@@ -1,7 +1,7 @@
 
 format = '[\[](bold red)$username[@](bold red)$hostname[\]](bold red) $directory  '
 
-right_format = '$git_branch'
+right_format = '$git_branch $git_status'
 
 add_newline = false
 

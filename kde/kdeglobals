@@ -35,7 +35,7 @@ ForegroundPositive=67,224,117
 ForegroundVisited=15,203,245
 
 [Colors:Complementary]
-BackgroundAlternate=38,38,38
+BackgroundAlternate=46,46,46
 BackgroundNormal=38,38,38
 DecorationFocus=21,209,193
 DecorationHover=22,222,205
@@ -105,8 +105,8 @@ ForegroundPositive=67,224,117
 ForegroundVisited=15,203,245
 
 [Colors:View]
-BackgroundAlternate=38,38,38
-BackgroundNormal=38,38,38
+BackgroundAlternate=46,46,46
+BackgroundNormal=46,46,46
 DecorationFocus=0,145,133
 DecorationHover=0,145,133
 ForegroundActive=23,231,214
@@ -138,8 +138,7 @@ History Items[$e]=file:$HOME/mnt/drive1/knowledge/Librarys/bookfusion,file:$HOME
 
 [General]
 BrowserApplication=com.google.Chrome.desktop
-ColorScheme=MateriaManjaroDarkSolid
-ColorSchemeHash=f13a5f93a8d2186748a87eaf56ec9fcef24073d5
+ColorSchemeHash=f3d5a16757bc1c64d00111c20e75e5e5bd8b8812
 TerminalApplication=ghostty
 TerminalService=com.mitchellh.ghostty.desktop
 
