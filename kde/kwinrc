@@ -66,6 +66,9 @@ tiles={"layoutDirection":"horizontal","tiles":[]}
 [Tiling][f84afef5-3671-5476-afbf-bb88298d90a3]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
+[Wayland]
+InputMethod[$e]=/usr/share/applications/org.fcitx.Fcitx5.desktop
+
 [Windows]
 RollOverDesktops=true
 SeparateScreenFocus=true
